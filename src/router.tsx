@@ -29,8 +29,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "productos/:id/eliminar",
-        action: deleteProductAction,
-        // loader: editProductLoader
+        action: deleteProductAction
       }
     ]
   }
