@@ -4,6 +4,6 @@ export function formatCurrency(quantity: number) {
     }).format(quantity)
 }
 
-export function toBoolean(string: string) {
-    return string.toLowerCase() == "True" 
+export function toBoolean(string: string): boolean {
+    return /^(true|1|yes)$/i.test(string);
 }
